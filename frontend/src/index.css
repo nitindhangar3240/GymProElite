@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+    margin: 0;
+
+    font-family: Inter, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef2ff
+    );
+
+    overflow-x: hidden;
+
+    color: #111827;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(
+        #7c3aed,
+        #4f46e5
+    );
+
+    border-radius: 999px;
+
+}
+
+/* GLASS EFFECT */
+
+.glass-card {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.75
+    );
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.3
+    );
+
+}
+
+/* ANIMATIONS */
+
+.fade-up {
+
+    animation: fadeUp .6s ease forwards;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.hover-lift {
+
+    transition: all .3s ease;
+
+}
+
+.hover-lift:hover {
+
+    transform: translateY(-6px);
+
+}
+
+/* GRADIENT TEXT */
+
+.gradient-text {
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #4f46e5,
+        #06b6d4
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
