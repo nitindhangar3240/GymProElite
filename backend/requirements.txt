@@ -20,3 +20,4 @@ google-genai
 reportlab
 gunicorn
 python-dotenv
+psycopg2-binary
